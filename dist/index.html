@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <link rel='icon' href="./weather-icon.png">
+  <script src="main.js" defer></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+</head>
+<body>
+  <header>
+  <div id='logo-div'>  
+    <img src="./weather-icon.png" alt="weather-icon">
+    <p>Weather App</p>
+  </div>
+    <div id='city-input-div'>
+      <abbr title="Search City"><img id='input-image' src="https://img.icons8.com/fluent/48/000000/search-in-cloud.png" alt='search-logo'></abbr>
+      <input type="text"  placeholder="Enter City Name" id='city-input' >
+    </div>
+  </header>
+  <main>
+    <div id='main-footer'>
+      <abbr title="Change Unit"><button id='toggle-unit-button'>&#176;F</button></abbr>
+      <div id='location'>
+        <p>Cordinates : </p>
+        <p id='latitude'></p>
+        <p>,</p>
+        <p id='longitude'></p>
+      </div>
+    </div>
+    <div id='main-weather-div'>
+      <img src="#" id="weather-logo">
+      <p id="city-name">City</p>
+      <div class='temp-div' id='temp-div'>
+        <p class='temp-value'>00</p>
+        <p>&#176</p>
+        <p class='temp-unit'>C</p>
+      </div>
+  </div>
+    <div id='temp-min-max-div'>
+      <div class='temp-div' id='min-temp'>
+        min :  
+        <p class='temp-value'>00</p>
+        <p>&#176</p>
+        <p class='temp-unit'>C</p>
+      </div>
+      <div class='temp-div' id='max-temp'>
+        max : 
+        <p class='temp-value'>00</p>
+        <p>&#176</p>
+        <p class='temp-unit'>C</p>
+      </div>
+      <div class='temp-div' id='feels-like-temp'>
+        feels like : 
+        <p class='temp-value'>00</p>
+        <p>&#176</p>
+        <p class='temp-unit'>C</p>
+      </div>
+    </div>
+    <p id="description"></p>
+    <div id="humwind-div">
+      <p id="humidity">Humidity : 0%</p>
+      <p id='wind-speed'>Wind : 00 km/h</p>
+    </div>
+    <div id='loading-tyre-div'>
+      <img src="./spinner.gif" alt="loading" id='loading-tyre'>
+    </div>
+    <div id='error-div'>
+      
+      <div id='error-statement-div'>
+        <img src="./error-icon.webp">
+        <p>Error!! Try again later or with different value</p>
+      </div>
+    <button id='try-again-button'>Try again</button>
+    </div>
+  </main>
+  <footer>
+    <p>by : Rohit Mirchandani</p>
+    <p>Data provided by : <a href="https://openweathermap.org/"><img src="https://openweathermap.org/themes/openweathermap/assets/img/logo_white_cropped.png" alt="open-weather-logo""></a></p>
+  </footer>
+</body>
+</html>
