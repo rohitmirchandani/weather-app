@@ -1,6 +1,6 @@
 const apiKey = '0dc5e3fb3361ed15f243a8433ec2d397';
 const getWeather = async location=>{
-  const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${apiKey}`,{mode:"cors"}).catch(()=>null)
+  const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${apiKey}`,{mode:"cors"}).catch(()=>null)
   if(response==null)return null;
   const weather = await response.json();
   if(weather.cod=='404')return null;
